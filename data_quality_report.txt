@@ -1,0 +1,55 @@
+
+CUSTOMER CHURN DATA QUALITY REPORT
+
+Total Rows: 15
+Total Columns: 11
+
+Missing Values:
+CustomerID          0
+Gender              0
+Age                 0
+TenureMonths        0
+SubscriptionType    0
+MonthlyCharges      0
+TotalCharges        0
+ContractType        0
+SupportTickets      0
+PaymentMethod       0
+Churn               0
+
+Exact Duplicate Rows Found: 0
+Exact Duplicate Rows Removed: 0
+
+Duplicate Customer IDs: 0
+
+Outlier Counts (IQR Method):
+Age               0
+TenureMonths      0
+MonthlyCharges    0
+TotalCharges      0
+SupportTickets    0
+
+SUMMARY STATISTICS:
+             Age  TenureMonths  MonthlyCharges  TotalCharges  SupportTickets
+count  15.000000     15.000000       15.000000     15.000000       15.000000
+mean   39.066667     18.800000       84.656667   2088.478667        2.533333
+std    11.392144     14.333776       42.739521   2407.365767        1.922300
+min    23.000000      2.000000       49.990000     99.980000        0.000000
+25%    30.000000      7.000000       49.990000    449.910000        1.000000
+50%    38.000000     15.000000       79.990000   1099.780000        2.000000
+75%    47.000000     27.000000      114.990000   3209.730000        4.000000
+max    60.000000     48.000000      149.990000   7199.520000        6.000000
+
+CHURN DISTRIBUTION:
+Churn
+No     8
+Yes    7
+
+Cleaning Decisions:
+1. Removed extra spaces from text columns.
+2. Checked and reported missing values.
+3. Removed exact duplicate rows.
+4. Checked duplicate customer IDs.
+5. Identified outliers using IQR.
+6. Outliers were flagged, not automatically removed.
+7. Saved cleaned dataset for further analysis.
